@@ -1,27 +1,61 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <view-error></view-error>
+  <view-success></view-success>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import ViewError from "@/components/ViewError.vue";
+import ViewSuccess from "@/components/ViewSuccess.vue";
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    ViewError,
+    ViewSuccess,
   }
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+main {
+  width: 40rem;
+  margin: 3rem auto;
+}
+
+section {
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+button {
+  font: inherit;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+  color: #222;
 }
 </style>
