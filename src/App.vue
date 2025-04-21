@@ -37,6 +37,7 @@ main {
 }
 
 section {
+  width: 500px;
   margin: 2rem auto;
   border: 1px solid #ccc;
   border-radius: 12px;

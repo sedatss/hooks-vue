@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import ViewAlerts from './ViewAlerts.vue'
-import useAlert from "@/components/hooks/alert"
+import useAlert from "@/composables/alert"
 
 const { alertIsVisible, showAlert, hideAlert } = useAlert()
 </script>

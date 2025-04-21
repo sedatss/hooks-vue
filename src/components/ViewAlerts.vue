@@ -25,7 +25,7 @@ const emit = defineEmits<{
   (e: 'close'): void
 }>()
 
-function closeDialog() {
+function closeDialog() : void  {
   emit('close')
 }
 </script>

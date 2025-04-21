@@ -3,11 +3,11 @@ import { ref } from 'vue';
 export default function useAlert() {
     const alertIsVisible = ref(false);
 
-    function showAlert() {
+    function showAlert() :void  {
         alertIsVisible.value = true;
     }
 
-    function hideAlert() {
+    function hideAlert(): void {
         alertIsVisible.value = false;
     }
 
